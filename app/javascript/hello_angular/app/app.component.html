@@ -1,1 +1,8 @@
-<h1>Esto explota{{name}}</h1>
+<div>
+	Lista de users
+	<ul *ngFor='let user of users'>
+	<li >{{ user.name }}</li>
+	</ul>
+	<button>{{total_count}}</button>
+	<button>{{total_pages}}</button>
+</div>
