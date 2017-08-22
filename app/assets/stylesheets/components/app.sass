@@ -1,5 +1,6 @@
-$back: #42f48f
-$titleBack: #d2dddb
+@import _variables
+@import posts
+
 *
 	padding: 0px
 	margin: 0px
@@ -8,36 +9,7 @@ $titleBack: #d2dddb
 body
 	background-color: $back
 
-.title
-	width: 50vw
-	text-align: center
-	border: 0px
-	margin-bottom: 10px
-	background-color: $titleBack 
-
-.posts
-	justify-content: center
-	align-items: center
-	text-align: center
-	display: flex
-	flex-direction: column
-
-.post
-	margin: 10px
-	border-radius: 10px
-	background-color: white
-	p
-		margin-top: 20px
-		height: 30vh
-	button
-		margin-bottom: 10px	
-		border-radius: 20px
-		text-align: center
-		background-color: lightblue
-		padding: 4px 10px
-
-
-.alert
-	padding: 0px
-	margin: 0px
-	border: 0px
+.menu
+	height: 5vh
+	width: 100vw
+	background-color: $menuBack

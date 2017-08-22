@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import PostsService from '../services/posts.service';
 import Post from '../models/post.model';
-import { PostComponent } from './post.component';
-
 @Component({
-  selector: 'app',
-  templateUrl: './app.component.html',
+  selector: 'the-posts',
+  templateUrl: './post.component.html',
 
 })
 
-export class AppComponent {
+export class PostComponent {
 	posts: Post[];
 	total_pages: number;
 	total_count: number;
@@ -21,5 +19,4 @@ export class AppComponent {
 			this.posts = response.page
 		});
 	}
-  name = 'Angular!';
 }

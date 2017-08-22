@@ -1,0 +1,14 @@
+	
+	<h1 class="title text-center center-block">Posts</h1>
+	
+	<div class="posts">
+		
+		<div class="post col-xs-4" *ngFor='let post of posts'>
+			<article>
+				<h2>{{ post.title }}</h2>
+				<p>{{ post.content }}</p>
+				<button>Read More...</button>
+			</article>
+		</div>	
+
+	</div>
