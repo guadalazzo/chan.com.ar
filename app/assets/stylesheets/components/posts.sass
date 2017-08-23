@@ -2,32 +2,38 @@
 
 .title
 	width: 50vw
-	text-align: center
-	border: 0px
-	margin-bottom: 10px
-	background-color: $titleBack 
+	font-size: 25px
+	font-family: 'Fjalla One', sans-serif
+	text-align: left
+	margin: 0px 0px 10px 0px
 
 .posts
 	justify-content: center
 	align-items: center
 	text-align: center
 	display: flex
-	flex-direction: column
+	flex-direction: row
 
 .post
 	margin: 10px
-	border-radius: 10px
-	background-color: white
+	border-radius: 5px
+	background-color: $articleBack
 	p
 		margin-top: 20px
-		height: 30vh
-	button
+		height: 200px
+	a
+		font-family: 'Fjalla One', sans-serif
 		margin-bottom: 10px	
 		border-radius: 20px
 		text-align: center
-		background-color: lightblue
+		background-color: transparent
 		padding: 4px 10px
-
+		font-size: 20px
+		color: black
+		transition: 0.5s
+		text-decoration: none
+	a:hover,a:active,a:link
+		color: white 
 
 .alert
 	padding: 0px
