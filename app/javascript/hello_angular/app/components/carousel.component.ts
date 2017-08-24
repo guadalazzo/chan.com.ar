@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'carousel',
+  selector: 'lupe-carousel',
   templateUrl: './carousel.component.html'
 })
 export class Carousel {
