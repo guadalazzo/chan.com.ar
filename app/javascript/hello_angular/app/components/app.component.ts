@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import PostsService from '../services/posts.service';
 import Post from '../models/post.model';
 import { PostComponent } from './post.component';
-
+import {Carousel} from './carousel.component'
 @Component({
   selector: 'app',
   templateUrl: './app.component.html',
