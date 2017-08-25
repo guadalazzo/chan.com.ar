@@ -16,19 +16,31 @@
 			position: absolute
 			width: 100vw
 		div
+			flex-direction: column
 			bottom: 0
 			position: absolute
 			width: 100vw
-			display: flex
+			display: inline-flex
 			justify-content: center
 			align-items: center
-			padding-bottom: 5px
-			a
-				width: 200px
-				display: flex
-				justify-content: center
-				align-items: center
-				text-align: center
-				text-transform: center
+			padding-bottom: 65px
+			p
+				color: white
+				font-family: 'Fjalla One', sans-serif
+				font-size: 18px
+
 .item 
 	height: 80vh
+
+.btn
+	font-family: 'Fjalla One', sans-serif
+	background-color: transparent
+	border: 1px solid white
+	color: white
+	transition: 0.4s
+	text-transform: uppercase
+.btn:active,.btn:hover,.btn:link
+	background-color: white 
+	color: black
+.carousel-indicators
+	left: 50.8%
