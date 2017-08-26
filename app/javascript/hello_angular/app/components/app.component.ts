@@ -10,6 +10,7 @@ import {Carousel} from './carousel.component'
 })
 
 export class AppComponent {
+
 	posts: Post[];
 	total_pages: number;
 	total_count: number;
@@ -21,5 +22,13 @@ export class AppComponent {
 			this.posts = response.page
 		});
 	}
+		
+	 mouseEnter(event){
+  	event.target.classList.add('animated');
+   }
+
+   mouseLeave(event){
+   	event.target.classList.remove('animated');
+   }
   name = 'Angular!';
 }
