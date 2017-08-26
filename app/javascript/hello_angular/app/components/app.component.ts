@@ -24,11 +24,11 @@ export class AppComponent {
 	}
 		
 	 mouseEnter(event){
-  	event.target.classList.add('animated');
+  	event.target.classList.add('animated','bounce');
    }
 
    mouseLeave(event){
-   	event.target.classList.remove('animated');
+   	event.target.classList.remove('animated','bounce');
    }
   name = 'Angular!';
 }
