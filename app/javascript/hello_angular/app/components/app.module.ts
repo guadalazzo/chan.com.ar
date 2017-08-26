@@ -6,12 +6,14 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { Carousel} from './carousel.component';
 import {PostComponent}from './post.component' ;
 import  PostsService  from '../services/posts.service';
+import RecentComponent from './recent.component';
 
 @NgModule({
   declarations: [
     Carousel,
     AppComponent,
-    PostComponent
+    PostComponent,
+    RecentComponent
   ],
   imports: [
     BrowserModule,
