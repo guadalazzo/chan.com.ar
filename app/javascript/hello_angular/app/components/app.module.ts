@@ -7,13 +7,15 @@ import { Carousel} from './carousel.component';
 import {PostComponent}from './post.component' ;
 import  PostsService  from '../services/posts.service';
 import RecentComponent from './recent.component';
+import Footer  from './footer.component';
 
 @NgModule({
   declarations: [
     Carousel,
     AppComponent,
     PostComponent,
-    RecentComponent
+    RecentComponent,
+    Footer
   ],
   imports: [
     BrowserModule,
