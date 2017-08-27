@@ -4,9 +4,10 @@ import Post from '../models/post.model';
 import { PostComponent } from './post.component';
 import {Carousel} from './carousel.component'
 import WOW from 'wow.js';
+
 @Component({
-  selector: 'app',
-  templateUrl: './app.component.html',
+	selector: 'app',
+	templateUrl: './app.component.html',
 
 })
 
@@ -18,19 +19,19 @@ export class AppComponent {
 	constructor(private postsService: PostsService){}
 	ngOnInit(){
 		new WOW().init();	
-			this.postsService.getPosts().subscribe(response=> {
+		this.postsService.getPosts().subscribe(response=> {
 			this.total_count=response.total_count
 			this.total_pages=response.total_pages
 			this.posts = response.page
 		});
 	}
-		
-	 mouseEnter(event){
-  	event.target.classList.add('animated','bounce');
-   }
+	
+	mouseEnter(event){
+		event.target.classList.add('animated','bounce');
+	}
 
-   mouseLeave(event){
-   	event.target.classList.remove('animated','bounce');
-   }
-  name = 'Angular!';
+	mouseLeave(event){
+		event.target.classList.remove('animated','bounce');
+	}
+	name = 'Angular!';
 }
