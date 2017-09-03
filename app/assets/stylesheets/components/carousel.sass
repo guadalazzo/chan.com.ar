@@ -8,13 +8,21 @@
 .slide
 	height: 80vh
 	background-size: cover
-	div
-		
+	.lupe-carousel-item
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		min-height: 520px
+
 		img
-			bottom: 0
+			top: 0
 			position: absolute
-			width: 100vw
-		div
+		.action
+			padding-top: 15px
+			background-color:  rgba(0, 0, 0, 0.4)
 			flex-direction: column
 			bottom: 0
 			position: absolute
@@ -48,3 +56,15 @@
 	text-shadow: none
 .carousel-indicators
 	left: 50.8%
+
+@media (max-width: 768px)
+	.lupe-carousel-item
+		height: 523px
+		width: auto
+		img
+			height: 523px
+			width: auto
+	.slide
+		height: 523px
+		width: auto
+	.action
